@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- saved from url=(0185)http://127.0.0.1:5500/miditerm/%EC%9E%85%EB%A0%A5%EC%96%91%EC%8B%9D%ED%85%8C%EA%B7%B8input%EC%B2%B4%ED%81%AC%EB%B0%95%EC%8A%A4%EB%9D%BC%EB%94%94%EC%98%A4%EB%B2%84%ED%8A%BCselection.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head><body>겟방식
+    
+    
+        <section>
+            <article>
+                <form action="http://127.0.0.1:5500/miditerm/01_gate.jsp" method="get">
+                    <p>이름 : <input type="text" name="name"></p>
+                    <p>전공 : <input type="text" name="major"></p>
+                    <p></p>
+                    <input type="submit" value="전송">
+                    <input type="reset" value="다시전송">
+                </form>
+                포스트방식
+                <form action="http://127.0.0.1:5500/miditerm/02_gate.jsp" method="post">
+                    <p>이름 : <input type="text" name="name"></p>
+                    <p>전공 : <input type="text" name="major"></p>
+                    <p>학과 : <input type="text" name="school" value=" 컴퓨터학과"></p>
+                    <input type="submit" value="전송">
+                    <input type="reset" value="다시전송">
+                </form>
+                <form>
+                    <fieldset>
+                    <legend>정보입력</legend>
+                    <p>id : <input type="password" namep="psw" placeholder="비밀번호" required=""></p>
+                    <textarea cols="30" rows="10">텍스트를 입력하세요</textarea>
+                    
+                    <input type="submit" value="전송">
+                    <input type="reset" value="다시전송">
+                    </fieldset>
+                </form>
+            </article>
+            <form action="http://127.0.0.1:5500/miditerm/%EC%9E%85%EB%A0%A5%EC%96%91%EC%8B%9D%ED%85%8C%EA%B7%B8input%EC%B2%B4%ED%81%AC%EB%B0%95%EC%8A%A4%EB%9D%BC%EB%94%94%EC%98%A4%EB%B2%84%ED%8A%BCselection.html">
+                <input type="radio" name="sex" value="male" checked="">남자
+                <input type="radio" name="sex" value="female">여자
+                <h3>grade</h3>
+                <input type="radio" name="year" value="1" checked="">1학년
+                <input type="radio" name="year" value="2">2학년
+                <input type="radio" name="year" value="3">3학년
+                <input type="radio" name="year" value="4">4학년
+                <p></p>
+                <h3>프로그램</h3>
+                <input type="checkbox" name="subject" value="html5" checked="">html5<br>
+                <input type="checkbox" name="subject" value="JAVA">JAVA<br>
+                <p></p>
+                <input type="submit" value="제출">
+                <input type="reset" value="다시작성">
+            </form>
+           <p></p>
+           
+            <form>
+
+                <button type="button" onclick="alert(&#39;클릭- 사용&#39;)">클릭</button>
+                <input type="button" onclick="alert(&#39;클릭- 사용&#39;)" value="click2">
+                <p></p>
+                <select name="sex">
+                    <option value="female" selected="">여자</option>
+                    <option value="male">남자</option>   
+                </select>
+                    <p></p>
+                <input type="submit" value="제출">
+                <input type="reset" value="다시작성">
+                
+                <select name="sex" size="3" multiple="">
+                    <option value="female" selected="">여자</option>
+                    <option value="male">남자</option>   
+                    <option value="girl" selected="">14미만 여자</option>
+                </select>
+             
+            </form>
+        </section>
+        <form>
+            <label>choose your major</label>
+            <select name="major">
+                <optgroup label="computer">
+                    <option selected="">software</option>
+                </optgroup>
+                <optgroup label="language">
+                    <option>English</option>
+                </optgroup>
+            </select>
+        </form>
+        <form>
+            <label for="">전공분야를 입력하세요</label>
+            <input type="text" list="majorlist" name="major">
+            <datalist id="majorlist">
+                <option value="software">소프트웨어</option>
+                <option value="robor">로봇</option>
+                <option value="system">시스템</option>
+            
+        <p></p>
+
+            </datalist>
+
+                <h3>date</h3>
+                Today : <input type="date" name="today">
+
+                from : <input type="date" name="from" mim="2018-01-01" max="2022-12-31">
+            <h3>birthday</h3>
+            생일 : <input type="month" name="birth">
+            주간계획 : <input type="week" name="week">
+    <!--input type =='time & datetime-local도있다'-->
+
+    <h3>color</h3>
+    <input type="color" name="colorvalue" value="#0000ff">
+    <h3>number</h3>
+    <input type="number" name="number" min="0" max="500">
+    <h3>범위</h3>
+    <input type="range" name="point" min="0" max="500">
+    <h3>email</h3>
+    <input type="email" name="point">
+    <h3>url</h3>
+    <input type="url" name="point">
+   <p></p>
+    <input type="submit" value="제출">
+    <input type="reset" value="다시작성">
+</form>
+
+
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

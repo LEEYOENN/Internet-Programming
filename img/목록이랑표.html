@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)http://127.0.0.1:5500/miditerm/%EB%AA%A9%EB%A1%9D%EC%9D%B4%EB%9E%91%ED%91%9C.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</head>
+    <body>무순서목록
+    <ul>
+        <li>1</li>
+        <li>2</li>
+    </ul>
+   
+   순서목록
+    <ol>
+    
+        <li>1</li>
+        <li>2S</li>
+    </ol>
+    정의형목록
+    <dl>
+        <dt>first</dt>
+            <dd>-good</dd>
+        <dt>드반쩨</dt>
+            <dd>-히히</dd>
+    </dl>
+<section>
+    <article>
+        <table border="1" style="width:50%">
+                <tbody><tr><th>이름</th>
+                <th>점수</th>
+            </tr><tr> <!--tr 행생성 td 열생성 th 머리정의 제목 글자 강조
+            caption 태그 표제목 삽입 rowspan 세로병합 colspan 셀을 가로로병합-->
+                <td>홍민성 </td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>choi</td>
+                <td>80</td>
+            
+            </tr>
+            <tr>
+                <td>sim</td>
+                <td>70</td>
+            </tr>
+        </tbody></table>
+        <table border="1">
+            <caption>열통합테이블</caption>
+                <tbody><tr>
+                    <th>1열</th>
+                    <th colspan="2">2열</th>
+                </tr>
+                <tr>
+                    <td>2-1</td>
+                    <td>2-2</td>
+                    <td>2-3</td>
+                </tr>
+        </tbody></table>
+        <table border="1">
+            <caption>행통합테이블</caption>
+                <tbody><tr>
+                    <th>1hang</th>
+                    <td>1-2</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">2hang</th>
+                    <td>2-2</td>
+                </tr>
+                <tr>
+                    <td>3-2</td>
+                </tr>
+        </tbody></table>
+    </article>
+</section>
+</body></html>
